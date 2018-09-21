@@ -30,6 +30,15 @@
     "url": "https://github.com/gr1mmj00u/redis-serializer/issues"
   },
   "homepage": "https://github.com/gr1mmj00u/redis-serializer#readme",
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/__tests__/__fixtures__/"
+    ],
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -40,12 +49,13 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jest": "^21.15.1",
-    "jest": "^22.4.3"
+    "jest": "^22.4.3",
+    "mz": "^2.7.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "commander": "^2.15.1",
-    "debug": "^3.1.0",
-    "lodash": "^4.17.10"
+    "redis-parser": "^3.0.0",
+    "through2": "^2.0.3"
   }
 }
